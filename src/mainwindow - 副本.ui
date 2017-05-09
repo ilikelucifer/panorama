@@ -1,0 +1,814 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1594</width>
+    <height>1004</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1598</width>
+      <height>986</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab_calib">
+     <attribute name="title">
+      <string>双目鱼眼标定</string>
+     </attribute>
+     <widget class="QWidget" name="horizontalLayoutWidget_4">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1591</width>
+        <height>961</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout" stretch="80,20">
+       <property name="spacing">
+        <number>1</number>
+       </property>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout" stretch="80">
+         <property name="spacing">
+          <number>3</number>
+         </property>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QGroupBox" name="groupBox">
+             <property name="title">
+              <string/>
+             </property>
+             <widget class="QGraphicsView" name="graphicsView">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>630</width>
+                <height>630</height>
+               </rect>
+              </property>
+             </widget>
+             <widget class="QGraphicsView" name="graphicsView_6">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>642</y>
+                <width>630</width>
+                <height>315</height>
+               </rect>
+              </property>
+             </widget>
+            </widget>
+           </item>
+           <item>
+            <widget class="QGroupBox" name="groupBox_2">
+             <property name="title">
+              <string/>
+             </property>
+             <widget class="QGraphicsView" name="graphicsView_2">
+              <property name="geometry">
+               <rect>
+                <x>3</x>
+                <y>0</y>
+                <width>630</width>
+                <height>630</height>
+               </rect>
+              </property>
+             </widget>
+             <widget class="QGraphicsView" name="graphicsView_7">
+              <property name="geometry">
+               <rect>
+                <x>3</x>
+                <y>642</y>
+                <width>630</width>
+                <height>315</height>
+               </rect>
+              </property>
+             </widget>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_2" stretch="1,2,2,2,4,2">
+         <property name="spacing">
+          <number>6</number>
+         </property>
+         <item>
+          <widget class="QGroupBox" name="groupBox_open">
+           <property name="title">
+            <string>打开</string>
+           </property>
+           <widget class="QPushButton" name="pushButton_open">
+            <property name="geometry">
+             <rect>
+              <x>170</x>
+              <y>20</y>
+              <width>131</width>
+              <height>41</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>打开文件</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="pushButton_cam">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>20</y>
+              <width>131</width>
+              <height>41</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>打开相机</string>
+            </property>
+           </widget>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="groupBox_left">
+           <property name="title">
+            <string>左图（初级参数）</string>
+           </property>
+           <widget class="QWidget" name="horizontalLayoutWidget_2">
+            <property name="geometry">
+             <rect>
+              <x>2</x>
+              <y>20</y>
+              <width>311</width>
+              <height>111</height>
+             </rect>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="1,1">
+             <property name="spacing">
+              <number>2</number>
+             </property>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_3">
+               <property name="sizeConstraint">
+                <enum>QLayout::SetDefaultConstraint</enum>
+               </property>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_21" stretch="4,6">
+                 <item>
+                  <widget class="QLabel" name="label_18">
+                   <property name="text">
+                    <string>半径</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QDoubleSpinBox" name="doubleSpinBox_r1"/>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_6" stretch="4,6">
+                 <item>
+                  <widget class="QLabel" name="label_3">
+                   <property name="text">
+                    <string>圆心-X</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QDoubleSpinBox" name="doubleSpinBox_x1"/>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_9">
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_8" stretch="4,6">
+                 <item>
+                  <widget class="QLabel" name="label_5">
+                   <property name="text">
+                    <string>旋转</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QDoubleSpinBox" name="doubleSpinBox_rot1"/>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_7" stretch="4,6">
+                 <item>
+                  <widget class="QLabel" name="label_4">
+                   <property name="text">
+                    <string>圆心-Y</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QDoubleSpinBox" name="doubleSpinBox_y1"/>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="groupBox_right">
+           <property name="title">
+            <string>右图（初级参数）</string>
+           </property>
+           <widget class="QWidget" name="horizontalLayoutWidget_3">
+            <property name="geometry">
+             <rect>
+              <x>2</x>
+              <y>20</y>
+              <width>311</width>
+              <height>111</height>
+             </rect>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="1,1">
+             <property name="spacing">
+              <number>2</number>
+             </property>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_4">
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_22" stretch="4,6">
+                 <item>
+                  <widget class="QLabel" name="label_19">
+                   <property name="text">
+                    <string>半径</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QDoubleSpinBox" name="doubleSpinBox_r2"/>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_9" stretch="4,6">
+                 <item>
+                  <widget class="QLabel" name="label_6">
+                   <property name="text">
+                    <string>圆心-X</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QDoubleSpinBox" name="doubleSpinBox_x2"/>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_11">
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_11" stretch="4,6">
+                 <item>
+                  <widget class="QLabel" name="label_8">
+                   <property name="text">
+                    <string>旋转</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QDoubleSpinBox" name="doubleSpinBox_rot2"/>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_10" stretch="4,6">
+                 <item>
+                  <widget class="QLabel" name="label_7">
+                   <property name="text">
+                    <string>圆心-Y</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QDoubleSpinBox" name="doubleSpinBox_y2"/>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="groupBox_preview">
+           <property name="title">
+            <string>预览</string>
+           </property>
+           <widget class="QPushButton" name="pushButton_render">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>30</y>
+              <width>141</width>
+              <height>81</height>
+             </rect>
+            </property>
+            <property name="autoFillBackground">
+             <bool>false</bool>
+            </property>
+            <property name="text">
+             <string>渲染</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="pushButton_mode">
+            <property name="geometry">
+             <rect>
+              <x>180</x>
+              <y>30</y>
+              <width>121</width>
+              <height>81</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>实时预览/非实时</string>
+            </property>
+           </widget>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="groupBox_stitch">
+           <property name="title">
+            <string>自动拼接（高级参数，请勿随便更改）</string>
+           </property>
+           <widget class="QPushButton" name="pushButton_autoStitch">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>190</y>
+              <width>161</width>
+              <height>81</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>自动拼接</string>
+            </property>
+           </widget>
+           <widget class="QWidget" name="layoutWidget_9">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>84</y>
+              <width>141</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_39" stretch="4,6">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label_36">
+               <property name="text">
+                <string>拼接裁剪比例</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QDoubleSpinBox" name="doubleSpinBox_cropRatio"/>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QWidget" name="layoutWidget_10">
+            <property name="geometry">
+             <rect>
+              <x>160</x>
+              <y>84</y>
+              <width>144</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_44" stretch="4,6">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label_38">
+               <property name="text">
+                <string>竖直范围（外）</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QDoubleSpinBox" name="doubleSpinBox_roi_h"/>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QWidget" name="layoutWidget_11">
+            <property name="geometry">
+             <rect>
+              <x>160</x>
+              <y>30</y>
+              <width>144</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_45" stretch="4,6">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label_39">
+               <property name="text">
+                <string>水平范围（内）</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QDoubleSpinBox" name="doubleSpinBox_roi_w"/>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QWidget" name="layoutWidget_12">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>30</y>
+              <width>141</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_46" stretch="4,6">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label_40">
+               <property name="text">
+                <string>角点寻找范围</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSpinBox" name="spinBox_conerRange"/>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QWidget" name="layoutWidget_13">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>140</y>
+              <width>144</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_47" stretch="5,5">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label_41">
+               <property name="text">
+                <string>拼接分辨率</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QDoubleSpinBox" name="doubleSpinBox_workScale"/>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QWidget" name="layoutWidget_14">
+            <property name="geometry">
+             <rect>
+              <x>160</x>
+              <y>140</y>
+              <width>144</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_48" stretch="5,5">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label_42">
+               <property name="text">
+                <string>融合分辨率</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QDoubleSpinBox" name="doubleSpinBox_seamScale"/>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QPushButton" name="pushButton_showDebug">
+            <property name="geometry">
+             <rect>
+              <x>200</x>
+              <y>190</y>
+              <width>101</width>
+              <height>81</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>调试图像ON/OFF</string>
+            </property>
+           </widget>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="groupBox_save">
+           <property name="title">
+            <string>保存</string>
+           </property>
+           <widget class="QPushButton" name="pushButton_upload">
+            <property name="geometry">
+             <rect>
+              <x>170</x>
+              <y>87</y>
+              <width>131</width>
+              <height>41</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>上传</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="pushButton_load">
+            <property name="geometry">
+             <rect>
+              <x>170</x>
+              <y>27</y>
+              <width>131</width>
+              <height>41</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>载入</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="pushButton_save">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>27</y>
+              <width>131</width>
+              <height>101</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>保存</string>
+            </property>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_test">
+     <attribute name="title">
+      <string>    测试    </string>
+     </attribute>
+     <widget class="QWidget" name="horizontalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>20</y>
+        <width>1591</width>
+        <height>811</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <item>
+        <widget class="QGroupBox" name="groupBox_4">
+         <property name="title">
+          <string>手机端效果</string>
+         </property>
+         <widget class="QGraphicsView" name="graphicsView_app">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>13</y>
+            <width>791</width>
+            <height>791</height>
+           </rect>
+          </property>
+         </widget>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_3">
+         <property name="title">
+          <string>云端效果</string>
+         </property>
+         <widget class="QGraphicsView" name="graphicsView_cloud">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>13</y>
+            <width>791</width>
+            <height>791</height>
+           </rect>
+          </property>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="label_App">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>840</y>
+        <width>771</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_testOnline">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>870</y>
+        <width>211</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>在线测试</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_Cloud">
+      <property name="geometry">
+       <rect>
+        <x>810</x>
+        <y>840</y>
+        <width>761</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_Test">
+      <property name="geometry">
+       <rect>
+        <x>520</x>
+        <y>940</y>
+        <width>551</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_app_cloud_switch">
+      <property name="geometry">
+       <rect>
+        <x>690</x>
+        <y>870</y>
+        <width>211</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>云端/手机端渲染切换</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_testOffline">
+      <property name="geometry">
+       <rect>
+        <x>1150</x>
+        <y>870</y>
+        <width>211</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>离线测试</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_pano">
+     <attribute name="title">
+      <string> 全景图查看 </string>
+     </attribute>
+     <widget class="QPushButton" name="pushButton_openPano">
+      <property name="geometry">
+       <rect>
+        <x>1350</x>
+        <y>840</y>
+        <width>221</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>打开新全景图</string>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="graphicsView_pano">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>7</y>
+        <width>1580</width>
+        <height>790</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label_currentState">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>985</y>
+      <width>1581</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
